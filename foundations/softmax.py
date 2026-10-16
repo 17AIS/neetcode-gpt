@@ -11,7 +11,6 @@ class Solution:
         expo = 0
         big = max(z)
         for i in range(len(z)):
-            print(z[i])
             expo += exp(z[i] - big)
         for i in range(len(z)):
             z[i] = round(exp(z[i] - big) / expo, 4)
